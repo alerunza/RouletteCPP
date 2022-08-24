@@ -58,7 +58,7 @@ int main()
         cout << "[0][3][6][9][12][15][18][21][24][27][30][33][36]\n[2][5][8][11][14][17][20][23][26][29][32][35]\n[1][4][7][10][13][16][19][22][25][28][31][34]" << endl;
         cout << "\nAccesso Effettuato con successo" << endl;
         cout << "Info Profilo: \nUTENTE: " << testo << "\nSALDO: " << saldo << "$" << endl;
-        int random = rand() % 2;
+        int random = rand() % 36;
         cout << "Vuoi puntare su un numero specifico? (y/n)" << endl;
         cin >> roulette[0].risp;
 
