@@ -31,7 +31,7 @@ int main()
     ifstream file2;
     ofstream file3;
 
-    file2.open(nome);
+    file2.open("../src/data/" + nome);
 
     if (file2.is_open())
     {
@@ -43,7 +43,7 @@ int main()
     }
     else
     {
-        ofstream file(nome);
+        ofstream file("../src/data/" + nome);
         saldo = 100;
         saldoin = saldo;
         cout << "Registrazione in corso..." << endl;
@@ -232,7 +232,7 @@ int main()
         cout << "E' terminata la tua sessione di gioco, ecco il RIEPILOGO: \nSALDO d'entrata: " << saldoin << "$\nSALDO d'uscita: " << saldo << "$" << endl;
     }
 
-    file3.open(nome, fstream::out | fstream::trunc);
+    file3.open("../src/data/" + nome, fstream::out | fstream::trunc);
     file3 << saldo;
     file3.close();
 
