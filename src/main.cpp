@@ -29,28 +29,24 @@ int main()
 
     ofstream file;
     ifstream file2;
-    fstream file3;
+    ofstream file3;
 
-    file2.open(nome + ".txt");
+    file2.open(nome);
 
     if (file2.is_open())
     {
 
         cout << "Accesso in corso..." << endl;
-        getline(file2, nome);
-        file2 >> testo;
-        file2 >> testo2;
         file2 >> saldo;
+        saldoin = saldo;
         file2.close();
     }
     else
     {
-        ofstream file(nome + ".txt");
+        ofstream file(nome);
         saldo = 100;
+        saldoin = saldo;
         cout << "Registrazione in corso..." << endl;
-        file << "UTENTE: \n";
-        file << nome;
-        file << "\nSALDO: \n";
         file << saldo;
         file.close();
     }
@@ -236,15 +232,9 @@ int main()
         cout << "E' terminata la tua sessione di gioco, ecco il RIEPILOGO: \nSALDO d'entrata: " << saldoin << "$\nSALDO d'uscita: " << saldo << "$" << endl;
     }
 
-    file3.open(nome + ".txt");
-    if (file3.is_open())
-    {
-        file3 << "UTENTE: \n";
-        file3 << nome;
-        file3 << "\nSALDO: \n";
-        file3 << saldo;
-        file3.close();
-    }
+    file3.open(nome, fstream::out | fstream::trunc);
+    file3 << saldo;
+    file3.close();
 
     return 0;
 }
