@@ -1,0 +1,6 @@
+# settings / json files of vscode
+.vscode
+
+#file exe runnable
+
+*.exe
