@@ -137,10 +137,10 @@ int main()
             cin >> roulette[2].answer;
             if (roulette[2].answer == 'g' or roulette[2].answer == 'G')
             {
-                cout << "You have chosen the bet for the numbers UNDER 18" << endl;
+                cout << "You have chosen the bet for the numbers OVER 18" << endl;
                 do
                 {
-                    cout << "How much do you want to bet on numbers LESS than 18?" << endl;
+                    cout << "How much do you want to bet on numbers GREATER than 18?" << endl;
                     cin >> roulette[3].bet;
                     if (roulette[3].bet > balance)
                     {
@@ -156,10 +156,10 @@ int main()
             }
             if (roulette[2].answer == 'l' or roulette[2].answer == 'L')
             {
-                cout << "You have chosen the bet for the numbers OVER 18" << endl;
+                cout << "You have chosen the bet for the numbers UNDER 18" << endl;
                 do
                 {
-                    cout << "How much do you want to bet on numbers GREATER than 18?" << endl;
+                    cout << "How much do you want to bet on numbers LESS than 18?" << endl;
                     cin >> roulette[3].bet;
                     if (roulette[3].bet > balance)
                     {
@@ -239,5 +239,5 @@ int main()
     file3 << balance;
     file3.close();
 
-    return 0;
+    system("pause");
 }
