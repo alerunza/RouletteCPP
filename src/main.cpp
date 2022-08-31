@@ -31,7 +31,7 @@ int main()
     ifstream file2;
     ofstream file3;
 
-    file2.open("../data/" + name);
+    file2.open("../../data/" + name);
 
     if (file2.is_open())
     {
@@ -42,7 +42,7 @@ int main()
     }
     else
     {
-        ofstream file("../data/" + name);
+        ofstream file("../../data/" + name);
         balance = 100;
         balancein = balance;
         cout << "Signing-up..." << endl;
@@ -235,7 +235,7 @@ int main()
         cout << "It's finished your game session, here is the SUMMARY: \nCASH-in: " << balancein << "$\nCASH-out: " << balance << "$" << endl;
     }
 
-    file3.open("../data/" + name, fstream::out | fstream::trunc);
+    file3.open("../../data/" + name, fstream::out | fstream::trunc);
     file3 << balance;
     file3.close();
 
