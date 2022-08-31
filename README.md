@@ -5,7 +5,7 @@ This version of "Roulette" doesn't have the colors but only ODD & EVEN and Numbe
 
 ## Usage
 
-Open the executable file (.exe) through the bin folder to play the game
+Open the executable file for Windows or macOS/Linux through the bin folder to play the game
 
 ## Info
 
