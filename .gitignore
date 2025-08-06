@@ -1,6 +1,15 @@
-# settings / json files of vscode
-.vscode
-
-#file exe runnable
-
+# eseguibili
+roulette
+bin/
 *.exe
+*.out
+
+# profili utente
+data/
+
+# file oggetto
+*.o
+
+# editor files
+*.swp
+.DS_Store
