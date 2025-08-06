@@ -1,12 +1,55 @@
-## RouletteCPP
-A Simple code of Roulette made by chubs <a href="https://github.com/runzac/" target="_blank" > (runzac)</a> & <a href="https://github.com/Mich242/" target="_blank" > Mich24 </a>
+# 🎰 RouletteC
 
-This version of "Roulette" doesn't have the colors but only ODD & EVEN and Numbers to 1-18 & 19-36 and Number SPECIFIC
+> 🚨 This is the **new version** of the old RouletteCPP,  
+> completely rewritten in modular **C** by [alerunza](https://github.com/alerunza) & [Mich24](https://github.com/Mich242)
 
-## Usage
+---
 
-Open the executable file for **Windows** or **macOS**/**Linux** through the bin folder to play the game
+## 🔁 What's New
 
-## Info
+This version of the roulette game has been entirely restructured with:
 
-This is not the final version, if you find a bug / error or a way to optimize better the program do a pull request! Because this is full OPEN Source
+- ✅ Clean modular C code (`src/`, `include/`)
+- ✅ `Makefile` build system
+- ✅ Simple login system with file persistence
+- ✅ Profile balance tracking (saved inside `data/`)
+- ✅ Improved input validation and terminal UX
+
+Currently supported bets:
+- 🎯 Specific number (0–36)
+- ⚫ EVEN / 🔴 ODD
+- 📉 LESS than 18 / 📈 GREATER than 18
+
+> ✨ Colors and new features are planned in upcoming releases
+
+---
+
+## 🚀 Usage
+
+### ▶️ Compile & Run (macOS / Linux / WSL):
+
+```bash
+make
+./roulette
+```
+or if you use the bin folder:
+
+```bash
+./bin/roulette
+```
+📝 When prompted, type your username — it will create a file in data/ to track your balance.
+
+💡 Info
+This is not the final version
+
+Bug reports, optimizations, or pull requests are super welcome
+
+Built for fun and learning
+
+📜 License
+MIT License — open source, free to use and modify.
+
+👥 Authors
+🧠 alerunza
+🧑‍💻 Mich24
+
